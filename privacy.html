@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="How GFit TEST Backups accesses, uses, stores and shares data.">
+    <title>Privacy policy · GFit TEST Backups</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="shell">
+      <a class="brand" href="index.html"><span class="mark" aria-hidden="true">G</span> G-Fit Tech</a>
+      <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#terms">Terms</a></nav>
+    </header>
+    <main id="main" class="shell policy">
+      <p class="eyebrow">GFIT TEST BACKUPS</p>
+      <h1>Privacy policy</h1>
+      <p class="lead">How the owner's data is handled.</p>
+      <p class="muted">Last updated: 2 October 2026</p>
+      <section><h2>Who operates this tool</h2><p>G-Fit Tech operates GFit TEST Backups for its owner's private test backup and recovery work. This policy covers the backup tool and this information website. Contact: <a href="mailto:gfittechnology@gmail.com">gfittechnology@gmail.com</a>.</p></section>
+      <section><h2>Google data we access</h2><p>After the owner gives consent, the tool accesses the Google account email address, Drive storage usage and limits, the designated folder's details and sharing permissions, and backup files and their metadata in that folder. Metadata includes file identifiers, names, creation times, sizes, backup labels and integrity checksums.</p><p>The requested Google Drive permission technically allows access to all Drive files. The tool applies its own restrictions to the designated backup folder and archives marked as belonging to this tool. It does not deliberately read unrelated documents or photos.</p></section>
+      <section><h2>How the data is used</h2><p>Account and folder information are used to confirm the expected owner, require private storage and check free space. Backup contents and metadata are used to upload encrypted archives, confirm a download is complete, perform recovery checks, and apply the configured retention rules.</p><p>Google data is not sold, used for advertising, or used to train general-purpose AI models. Use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p></section>
+      <section><h2>Database contents and encryption</h2><p>Archives contain test database records, schema and recovery metadata, including account identity records and password hashes where present. Backups are encrypted before being sent to Google Drive. The owner keeps a separate recovery key.</p><p>During backup and recovery tests, authorized automation temporarily handles decrypted database data. Encryption of a saved archive does not mean that its data stays encrypted while a recovery test is running.</p></section>
+      <section><h2>Storage and service providers</h2><ul><li><strong>Google Drive</strong> stores encrypted archives and their file metadata in the owner's private folder.</li><li><strong>GitHub Actions</strong> runs the private backup and recovery jobs. Protected credentials and the recovery key are stored in GitHub Actions secrets. Jobs use temporary working files; the workflow does not upload database dumps as GitHub artifacts.</li><li><strong>The owner's computer</strong> may hold protected credentials, the recovery key, encrypted backup copies and temporary files used for local recovery checks.</li><li><strong>Healthchecks.io</strong> receives job status signals to send monitoring emails. The integration does not send database records or backup contents.</li></ul><p>These services process the information needed to provide their functions under their own policies. The tool's operators access data only for authorized backup, recovery, maintenance or support work.</p></section>
+      <section><h2>Retention and deletion</h2><p>Automatic retention keeps at least the newest 30 matching archives. An older archive becomes eligible for Trash only when it is also over 30 days old and a new backup has been uploaded and verified. The tool does not remove unrelated Drive files. Files in Trash remain subject to Google's deletion rules and count toward storage while retained there.</p><p>The owner can change retention, delete stored archives, remove local copies and revoke stored credentials. Historical backups can contain records removed from the current database until those backups are deleted. Recovery keys are kept separately for as long as the corresponding archives are needed.</p></section>
+      <section><h2>Choice and revocation</h2><p>The owner can revoke this tool's access from <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revocation stops future Google access once the revocation takes effect; it does not delete existing archives, local copies or credentials held by other services. The owner should remove those separately when ending use.</p><p>For access, correction or deletion questions, contact <a href="mailto:gfittechnology@gmail.com">gfittechnology@gmail.com</a>.</p></section>
+      <section><h2>This information website</h2><p>These pages have no sign-in form, advertising, analytics code or tracking scripts. The hosting provider, GitHub Pages, logs visitor IP addresses for security purposes as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. Emailing us shares the information you choose to send with G-Fit Tech and the email providers involved.</p></section>
+      <section><h2>Policy changes</h2><p>We will update this page when the tool's data practices change and show the new date above. Material changes requiring new Google permissions will require the owner's consent.</p></section>
+    </main>
+    <footer class="shell"><span>G-Fit Tech · GFit TEST Backups</span><div><a href="index.html">Home</a><a href="index.html#terms">Terms of use</a></div></footer>
+  </body>
+</html>
